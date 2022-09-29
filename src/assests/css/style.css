@@ -1,0 +1,182 @@
+:root {
+    --font-main: 'Roboto';
+    --green-main: #1C3D32;
+    --green-secondary: #4FAB8C;
+    --green-light: #ADE3D1;
+    --green-deep: #485E57;
+    --white: #ffffff;
+    --gradient-main: linear-gradient(151deg, rgba(28,61,50,1) 3%, rgba(79,171,140,1) 100%);
+}
+
+.font-main {
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagem-carrosel {
+    object-fit: cover;
+    object-position: 0 50%;
+    height: 42.5rem;
+}
+
+.hover-green-main:hover {
+    color: var(--green-main) !important;
+    transition: 0.4s;
+}
+
+.hover-boder-inline {
+    border-bottom: 4px solid transparent;
+    transition: 0.4s;
+}
+
+.hover-boder-inline:hover {
+    border-bottom: 4px solid var(--green-light) ;
+}
+
+.font-green-deep {
+    color: var(--green-deep) !important;
+}
+
+.text-shadow-main {
+    text-shadow: 3px 2px 3px rgba(56, 54, 54, 0.2);
+}
+.text-green-main{
+    color: var(--green-main) !important;
+}
+.border-radius-15 {
+    border-radius: 15px !important;
+}
+
+.shadow-main {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.size-logo {
+    min-height: 4rem !important;
+    max-height: 4rem !important;
+    width: 7rem !important;
+}
+
+.btn-green-deep {
+    background-color: var(--green-deep) !important;
+    color: var(--white) !important;
+    font-size: 1.2rem !important;
+    transition: 0.5s;
+}
+
+.btn-green-deep:hover {
+    background: var(--green-main) !important;
+    border-color: var(--green-deep) !important;
+}
+
+.btn-outline-custom-green-light {
+    color: var(--green-light) !important;
+    border-color: var(--green-light) !important;
+    transition: 0.5s;
+}
+
+.btn-outline-custom-green-light:hover {
+    color: var(--white) !important;
+    background: var(--green-deep) !important;
+}
+
+.bg-gradient-main {
+    background: rgb(78, 195, 224);
+    background: var(--gradient-main);
+}
+
+.bg-green-deep {
+    background: var(--green-deep);
+}
+
+.bg-green-main {
+    background: var(--green-main);
+}
+
+.bg-green-secondary {
+    background: var(--green-secondary) !important;
+}
+
+.bg-glassmorphim {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.bg-banner-quem-somos {
+    background: url('../img/medico&pacienteCreme1920x1280.jpg');
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.bg-banner-especialidades {
+    background: url('../img/medica&pacienteLaser1920x1280.jpg');
+    height: 75vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.over-another {
+    position: relative;
+    margin-top: -2.8rem;
+    z-index: 1000;
+}
+
+/*Inicio navbar*/
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #262626;
+}
+
+.change-color-scroll {
+    transition: 0.5s !important;
+}
+
+/* Color of the navbar BEFORE scroll */
+/* .navbar-scroll {
+  background-color: transparent;
+} */
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.navbar-brand {
+    font-size: unset;
+    height: 3.5rem;
+}
+
+/*Fim navbar*/
+
+@media(max-width: 768px){
+    .imagem-carrosel{
+        object-position: 50% 50%;
+        height: 29.5rem;
+    }
+    .bg-banner-especialidades{
+        background-position: 60% 10%;
+    }
+    .bg-banner-quem-somos{
+        background-position: 59% 10%;
+    }
+}
